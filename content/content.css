@@ -1,0 +1,25 @@
+/*
+ * 电商图片下载助手 - 内容脚本样式
+ * 用于页面上注入的「就绪」提示角标。
+ */
+
+.ed-badge {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  padding: 8px 14px;
+  background: #3b82f6;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.ed-badge.ed-hide {
+  opacity: 0;
+}

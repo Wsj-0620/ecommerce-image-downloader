@@ -1,0 +1,8 @@
+# 打包产物
+*.zip
+*.crx
+*.pem
+
+# 系统文件
+.DS_Store
+Thumbs.db

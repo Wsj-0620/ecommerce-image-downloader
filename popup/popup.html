@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>电商图片下载助手</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- 顶部：标题 + 站点信息 -->
+  <header class="header">
+    <div class="title">电商图片下载助手</div>
+    <div class="subtitle" id="siteInfo">检测中…</div>
+  </header>
+
+  <!-- 工具栏：全选 + 统计 -->
+  <div class="toolbar">
+    <label class="select-all">
+      <input type="checkbox" id="selectAll">
+      <span>全选</span>
+    </label>
+    <div class="stats" id="stats">共 0 张 · 已选 0</div>
+  </div>
+
+  <!-- 操作区 -->
+  <div class="actions">
+    <button id="btnZip" class="btn primary">打包下载所选 (ZIP)</button>
+  </div>
+
+  <!-- 图片网格 -->
+  <div id="grid" class="grid"></div>
+
+  <!-- 空状态 -->
+  <div id="empty" class="empty" style="display:none;">
+    <div class="empty-icon">🖼️</div>
+    <div class="empty-text">未检测到商品图片<br>请确认已打开商品详情页</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
