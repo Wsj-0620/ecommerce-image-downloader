@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>电商图片下载助手 - 淘宝/京东/拼多多商品图片一键下载</title>
+  <meta name="description" content="电商图片下载助手是一款 Chrome 浏览器插件，支持在淘宝/天猫、京东、拼多多商品详情页一键提取商品图片，单张下载或批量打包下载。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-logo"></span>
+        电商图片下载助手
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#features">功能</a>
+        <a href="#install">安装教程</a>
+        <a href="#download" class="nav-cta">立即下载</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 首屏 -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-tag">Chrome 浏览器插件</span>
+        <h1>一键提取商品图片<br>单张 / 批量下载</h1>
+        <p class="hero-sub">
+          在淘宝/天猫、京东、拼多多的商品详情页自动抓取全部商品图，
+          过滤图标与头像等无关图片，支持单张下载与 ZIP 批量打包。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="ecommerce-image-downloader.zip" download>
+            ⬇ 免费下载插件
+          </a>
+          <a class="btn btn-ghost" href="#install">查看安装教程</a>
+        </div>
+        <div class="hero-meta">
+          <span>✔ 免费使用</span>
+          <span>✔ 无需注册</span>
+          <span>✔ 本地运行</span>
+        </div>
+      </div>
+
+      <!-- 弹窗预览示意 -->
+      <div class="hero-preview" aria-hidden="true">
+        <div class="window">
+          <div class="window-bar">
+            <span class="dot dot-r"></span>
+            <span class="dot dot-y"></span>
+            <span class="dot dot-g"></span>
+            <span class="window-title">电商图片下载助手</span>
+          </div>
+          <div class="window-body">
+            <div class="preview-row">
+              <span class="preview-chip">全选</span>
+              <span class="preview-count">共 12 张 · 已选 12</span>
+            </div>
+            <div class="preview-grid">
+              <div class="thumb t1"></div>
+              <div class="thumb t2"></div>
+              <div class="thumb t3"></div>
+              <div class="thumb t4"></div>
+              <div class="thumb t5"></div>
+              <div class="thumb t6"></div>
+              <div class="thumb t7"></div>
+              <div class="thumb t8"></div>
+            </div>
+            <button class="preview-btn">打包下载所选 (ZIP)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 功能特性 -->
+  <section class="section" id="features">
+    <div class="section-head">
+      <h2>核心功能</h2>
+      <p>专为电商从业者打造的图片素材下载工具</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">🖼️</div>
+        <h3>智能提取</h3>
+        <p>自动抓取页面中的商品图片，兼容懒加载与 CSS 背景图，自动过滤 logo、图标、头像等无关图片。</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⬇️</div>
+        <h3>单张下载</h3>
+        <p>悬停缩略图即可下载单张图片，快速保存心仪的商品图素材。</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📦</div>
+        <h3>批量打包</h3>
+        <p>勾选多张图片一键打包为 ZIP 压缩包，详情页整套素材一次带走。</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🛒</div>
+        <h3>多平台支持</h3>
+        <p>适配淘宝/天猫、京东、拼多多三大主流电商平台，详情页即开即用。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 安装教程 -->
+  <section class="section section-alt" id="install">
+    <div class="section-head">
+      <h2>安装教程</h2>
+      <p>三步完成安装，无需注册</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>下载并解压</h3>
+          <p>点击上方「免费下载插件」，解压 <code>ecommerce-image-downloader.zip</code> 压缩包到本地。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>打开扩展管理页</h3>
+          <p>在 Chrome 地址栏输入 <code>chrome://extensions</code>，打开右上角的「开发者模式」。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>加载插件</h3>
+          <p>点击「加载已解压的扩展程序」，选择解压出来的 <code>ecommerce-image-downloader</code> 文件夹即可。</p>
+        </div>
+      </div>
+    </div>
+    <p class="tip">💡 打开任一淘宝/天猫、京东、拼多多商品详情页，点击浏览器工具栏中的插件图标，即可提取并下载图片。</p>
+  </section>
+
+  <!-- 下载区 -->
+  <section class="section download" id="download">
+    <div class="section-head">
+      <h2>立即下载</h2>
+      <p>下载后按上面的教程加载即可使用</p>
+    </div>
+    <div class="download-box">
+      <a class="btn btn-primary btn-lg" href="ecommerce-image-downloader.zip" download>
+        ⬇ 下载插件压缩包
+      </a>
+      <p class="download-note">文件名：ecommerce-image-downloader.zip</p>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <p>电商图片下载助手 · 仅供学习与个人使用，请遵守目标网站的服务条款与版权规定。</p>
+    <p>© 2026 电商图片下载助手项目</p>
+  </footer>
+
+  <script>
+    // 移动端导航折叠
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
