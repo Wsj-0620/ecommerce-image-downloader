@@ -2,6 +2,8 @@
 *.zip
 *.crx
 *.pem
+# 官网下载用的插件压缩包需要随仓库发布，忽略规则之外单独放行
+!docs/ecommerce-image-downloader.zip
 
 # 系统文件
 .DS_Store
